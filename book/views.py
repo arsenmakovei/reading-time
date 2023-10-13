@@ -1,6 +1,7 @@
 from django.utils import timezone
 from rest_framework import viewsets, status
 from rest_framework.decorators import action
+from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 
 from book.models import Book, ReadingSession
@@ -28,7 +29,7 @@ class BookViewSet(viewsets.ReadOnlyModelViewSet):
 
         return BookSerializer
 
-    @action(detail=True, methods=["POST"])
+    @action(detail=True, methods=["POST"], permission_classes=[IsAuthenticated])
     def start_reading_session(self, request, pk=None):
         book = self.get_object()
         user = request.user
@@ -54,7 +55,7 @@ class BookViewSet(viewsets.ReadOnlyModelViewSet):
             status=status.HTTP_200_OK,
         )
 
-    @action(detail=True, methods=["POST"])
+    @action(detail=True, methods=["POST"], permission_classes=[IsAuthenticated])
     def end_reading_session(self, request, pk=None):
         book = self.get_object()
         user = request.user
