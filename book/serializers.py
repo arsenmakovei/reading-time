@@ -1,9 +1,9 @@
 from datetime import timedelta
 
-from django.db.models import Sum, F
 from rest_framework import serializers
 
 from book.models import Book, ReadingSession
+from book.utils import calculate_reading_time_for_book
 
 
 class BookSerializer(serializers.ModelSerializer):
@@ -69,9 +69,7 @@ class BookDetailSerializer(serializers.ModelSerializer):
         user = self.context["request"].user
 
         if user.is_authenticated:
-            total_reading_time = ReadingSession.objects.filter(
-                book=obj, user=user
-            ).aggregate(total_time=Sum(F("end_time") - F("start_time")))["total_time"]
+            total_reading_time = calculate_reading_time_for_book(user=user, book=obj)
 
             if total_reading_time:
                 return str(total_reading_time)
