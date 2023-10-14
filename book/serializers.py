@@ -7,6 +7,8 @@ from book.models import Book, ReadingSession
 
 
 class BookSerializer(serializers.ModelSerializer):
+    """Base serializer for the Book model."""
+
     class Meta:
         model = Book
         fields = (
@@ -20,6 +22,8 @@ class BookSerializer(serializers.ModelSerializer):
 
 
 class BookListSerializer(serializers.ModelSerializer):
+    """Serializer for displaying a list of books."""
+
     class Meta:
         model = Book
         fields = (
@@ -32,6 +36,9 @@ class BookListSerializer(serializers.ModelSerializer):
 
 
 class BookDetailSerializer(serializers.ModelSerializer):
+    """Serializer for displaying detailed book information including
+    last read date and total reading time."""
+
     last_read_date = serializers.SerializerMethodField()
     total_reading_time = serializers.SerializerMethodField()
 
@@ -39,7 +46,9 @@ class BookDetailSerializer(serializers.ModelSerializer):
         model = Book
         fields = BookSerializer.Meta.fields + ("last_read_date", "total_reading_time")
 
-    def get_last_read_date(self, obj):
+    def get_last_read_date(self, obj: Book) -> str | None:
+        """Retrieves the last read date of the book
+        for the current authenticated user."""
         current_user = self.context["request"].user
 
         if current_user.is_authenticated:
@@ -54,7 +63,9 @@ class BookDetailSerializer(serializers.ModelSerializer):
 
         return None
 
-    def get_total_reading_time(self, obj):
+    def get_total_reading_time(self, obj: Book) -> str:
+        """Retrieves the total reading time of the book
+        for the current authenticated user."""
         user = self.context["request"].user
 
         if user.is_authenticated:
@@ -69,6 +80,8 @@ class BookDetailSerializer(serializers.ModelSerializer):
 
 
 class ReadingSessionSerializer(serializers.ModelSerializer):
+    """Serializer for the ReadingSession model."""
+
     class Meta:
         model = ReadingSession
         fields = ("id", "user", "book", "start_time", "end_time")

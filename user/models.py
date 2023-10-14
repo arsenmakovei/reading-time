@@ -1,6 +1,5 @@
 from datetime import timedelta
 
-from django.conf import settings
 from django.contrib.auth.models import AbstractUser, BaseUserManager
 from django.db import models
 from django.utils.translation import gettext as _
@@ -43,6 +42,11 @@ class UserManager(BaseUserManager):
 
 
 class User(AbstractUser):
+    """Custom user model represents a user in the system with an email
+    address as the unique identifier for authentication instead of a username.
+    It includes fields for the user's email address and tracks their total
+    reading time over specific periods."""
+
     username = None
     email = models.EmailField(_("email address"), unique=True)
     total_reading_time_7_days = models.DurationField(default=timedelta(0))

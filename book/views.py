@@ -1,7 +1,9 @@
 from django.utils import timezone
+from drf_spectacular.utils import extend_schema
 from rest_framework import viewsets, status
 from rest_framework.decorators import action
 from rest_framework.permissions import IsAuthenticated
+from rest_framework.request import Request
 from rest_framework.response import Response
 
 from book.models import Book, ReadingSession
@@ -14,10 +16,13 @@ from book.serializers import (
 
 
 class BookViewSet(viewsets.ReadOnlyModelViewSet):
+    """A viewset for handling Book objects with various actions."""
+
     queryset = Book.objects.all()
     serializer_class = BookSerializer
 
     def get_serializer_class(self):
+        """Returns the appropriate serializer class based on the action."""
         if self.action == "list":
             return BookListSerializer
 
@@ -29,8 +34,19 @@ class BookViewSet(viewsets.ReadOnlyModelViewSet):
 
         return BookSerializer
 
+    @extend_schema(responses={200: BookListSerializer(many=True)})
+    def list(self, request: Request, *args, **kwargs):
+        """This endpoint returns a list of all books available."""
+        return super().list(request, *args, **kwargs)
+
+    @extend_schema(responses={200: BookDetailSerializer()})
+    def retrieve(self, request: Request, *args, **kwargs):
+        """This endpoint retrieves detailed information about a specific book."""
+        return super().retrieve(request, *args, **kwargs)
+
     @action(detail=True, methods=["POST"], permission_classes=[IsAuthenticated])
-    def start_reading_session(self, request, pk=None):
+    def start_reading_session(self, request: Request, pk: int = None) -> Response:
+        """Starts a reading session for the specified book."""
         book = self.get_object()
         user = request.user
 
@@ -56,7 +72,8 @@ class BookViewSet(viewsets.ReadOnlyModelViewSet):
         )
 
     @action(detail=True, methods=["POST"], permission_classes=[IsAuthenticated])
-    def end_reading_session(self, request, pk=None):
+    def end_reading_session(self, request: Request, pk: int = None) -> Response:
+        """Ends the active reading session for the specified book."""
         book = self.get_object()
         user = request.user
 

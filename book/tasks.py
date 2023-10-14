@@ -9,7 +9,10 @@ from book.models import ReadingSession
 
 
 @shared_task
-def collect_reading_statistics():
+def collect_reading_statistics() -> None:
+    """Celery task calculates the total reading time for each user
+    based on their ReadingSession records and updates the user objects with
+    the total reading time for the last 7 and 30 days respectively."""
     users = get_user_model().objects.all()
 
     for user in users:
