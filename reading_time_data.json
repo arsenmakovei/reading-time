@@ -1,0 +1,540 @@
+[
+{
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+        "name": "Can add log entry",
+        "content_type": 1,
+        "codename": "add_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+        "name": "Can change log entry",
+        "content_type": 1,
+        "codename": "change_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+        "name": "Can delete log entry",
+        "content_type": 1,
+        "codename": "delete_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+        "name": "Can view log entry",
+        "content_type": 1,
+        "codename": "view_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+        "name": "Can add permission",
+        "content_type": 2,
+        "codename": "add_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+        "name": "Can change permission",
+        "content_type": 2,
+        "codename": "change_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+        "name": "Can delete permission",
+        "content_type": 2,
+        "codename": "delete_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+        "name": "Can view permission",
+        "content_type": 2,
+        "codename": "view_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+        "name": "Can add group",
+        "content_type": 3,
+        "codename": "add_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+        "name": "Can change group",
+        "content_type": 3,
+        "codename": "change_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+        "name": "Can delete group",
+        "content_type": 3,
+        "codename": "delete_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+        "name": "Can view group",
+        "content_type": 3,
+        "codename": "view_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+        "name": "Can add content type",
+        "content_type": 4,
+        "codename": "add_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+        "name": "Can change content type",
+        "content_type": 4,
+        "codename": "change_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": 4,
+        "codename": "delete_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+        "name": "Can view content type",
+        "content_type": 4,
+        "codename": "view_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+        "name": "Can add session",
+        "content_type": 5,
+        "codename": "add_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+        "name": "Can change session",
+        "content_type": 5,
+        "codename": "change_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+        "name": "Can delete session",
+        "content_type": 5,
+        "codename": "delete_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+        "name": "Can view session",
+        "content_type": 5,
+        "codename": "view_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+        "name": "Can add user",
+        "content_type": 6,
+        "codename": "add_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+        "name": "Can change user",
+        "content_type": 6,
+        "codename": "change_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+        "name": "Can delete user",
+        "content_type": 6,
+        "codename": "delete_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+        "name": "Can view user",
+        "content_type": 6,
+        "codename": "view_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+        "name": "Can add book",
+        "content_type": 7,
+        "codename": "add_book"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+        "name": "Can change book",
+        "content_type": 7,
+        "codename": "change_book"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+        "name": "Can delete book",
+        "content_type": 7,
+        "codename": "delete_book"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+        "name": "Can view book",
+        "content_type": 7,
+        "codename": "view_book"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+        "name": "Can add reading session",
+        "content_type": 8,
+        "codename": "add_readingsession"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+        "name": "Can change reading session",
+        "content_type": 8,
+        "codename": "change_readingsession"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+        "name": "Can delete reading session",
+        "content_type": 8,
+        "codename": "delete_readingsession"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+        "name": "Can view reading session",
+        "content_type": 8,
+        "codename": "view_readingsession"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+        "name": "Can add user profile",
+        "content_type": 9,
+        "codename": "add_userprofile"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+        "name": "Can change user profile",
+        "content_type": 9,
+        "codename": "change_userprofile"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+        "name": "Can delete user profile",
+        "content_type": 9,
+        "codename": "delete_userprofile"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+        "name": "Can view user profile",
+        "content_type": 9,
+        "codename": "view_userprofile"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+        "app_label": "admin",
+        "model": "logentry"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+        "app_label": "auth",
+        "model": "permission"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+        "app_label": "auth",
+        "model": "group"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+        "app_label": "contenttypes",
+        "model": "contenttype"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+        "app_label": "sessions",
+        "model": "session"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+        "app_label": "user",
+        "model": "user"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+        "app_label": "book",
+        "model": "book"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+        "app_label": "book",
+        "model": "readingsession"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+        "app_label": "user",
+        "model": "userprofile"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "trazj7qw6gxtajl13xdqqou2jj23gtku",
+    "fields": {
+        "session_data": ".eJxVjDkOwjAUBe_iGlkfrzIlPWew_mLjAEqkOKki7g6RUkD7ZuZtKuO6tLz2MudB1EUZdfrdCPlZxh3IA8f7pHkal3kgvSv6oF3fJimv6-H-HTTs7VsHVz0JckiGYyAoKYBEAevFAzpTI1iiahxxFUMRfHAIhdEXTtae1fsD8ts4Sw:1qr4WF:S3kfxNpxLNA3g8tZPUaJA8NJhPbQoI80Wds7mtsAY0g",
+        "expire_date": "2023-10-26T22:51:03.208Z"
+    }
+},
+{
+    "model": "user.user",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$Ev1V6bji3CwwPiKX5093aQ$RUu3jZq/0/x66gZvZfmIe/P6Ik6ZGUMOs79Qwg7nUgE=",
+        "last_login": "2023-10-12T22:51:03.163Z",
+        "is_superuser": true,
+        "first_name": "",
+        "last_name": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2023-10-12T22:17:09.671Z",
+        "email": "admin@admin.com",
+        "total_reading_time_7_days": "00:00:38.844000",
+        "total_reading_time_30_days": "00:00:38.844000",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "book.book",
+    "pk": 1,
+    "fields": {
+        "title": "Lord of the Rings",
+        "author": "J.R.R. Tolkien",
+        "publication_year": 1954,
+        "short_description": "Epic fantasy trilogy following the journey of Frodo Baggins to destroy the One Ring and save Middle-earth.",
+        "full_description": "\"The Lord of the Rings\" is a high-fantasy epic novel set in the fictional world of Middle-earth. It tells the story of Frodo Baggins, a hobbit who embarks on a perilous quest to destroy the One Ring and prevent the Dark Lord Sauron from conquering the world. Along with a diverse fellowship of companions, Frodo travels across Middle-earth, encountering magical creatures, ancient civilizations, and epic battles. The trilogy explores themes of heroism, friendship, and the struggle between good and evil."
+    }
+},
+{
+    "model": "book.book",
+    "pk": 2,
+    "fields": {
+        "title": "Harry Potter and the Sorcerer's Stone",
+        "author": "J.K. Rowling",
+        "publication_year": 1997,
+        "short_description": "First book in the magical series chronicling the adventures of young wizard Harry Potter.",
+        "full_description": "\"Harry Potter and the Sorcerer's Stone\" introduces readers to Harry Potter, a young orphan who discovers on his eleventh birthday that he is a wizard. He attends Hogwarts School of Witchcraft and Wizardry, where he makes friends, learns about the magical world, and unravels the mysteries surrounding his parents' death. The series follows Harry and his friends Hermione Granger and Ron Weasley as they confront dark forces, uncover secrets, and ultimately face the dark wizard Voldemort."
+    }
+},
+{
+    "model": "book.book",
+    "pk": 3,
+    "fields": {
+        "title": "A Game of Thrones",
+        "author": "George R.R. Martin",
+        "publication_year": 1996,
+        "short_description": "First book in the \"A Song of Ice and Fire\" series, featuring political intrigue and power struggles in the fictional land of Westeros.",
+        "full_description": "\"A Game of Thrones\" is a complex tale set in the land of Westeros, where noble families vie for control of the Iron Throne. Amidst political intrigue and betrayal, the story follows characters like Eddard Stark, Daenerys Targaryen, and Jon Snow as they navigate a dangerous world of power struggles, warfare, and supernatural threats. The series is renowned for its intricate plots, morally ambiguous characters, and unexpected twists."
+    }
+},
+{
+    "model": "book.book",
+    "pk": 4,
+    "fields": {
+        "title": "The Hobbit",
+        "author": "J.R.R. Tolkien",
+        "publication_year": 1937,
+        "short_description": "Prequel to \"The Lord of the Rings,\" detailing Bilbo Baggins' quest to help a group of dwarves reclaim their homeland.",
+        "full_description": "\"The Hobbit\" follows Bilbo Baggins, a hobbit who is unexpectedly swept into an epic adventure by the wizard Gandalf. Bilbo joins a group of dwarves led by Thorin Oakenshield on a quest to reclaim their homeland, the Lonely Mountain, from the dragon Smaug. Along the way, Bilbo encounters trolls, elves, goblins, and other magical creatures, gaining courage and resourcefulness. The story explores themes of heroism, growth, and the power of unexpected bravery."
+    }
+},
+{
+    "model": "book.book",
+    "pk": 5,
+    "fields": {
+        "title": "The Shining",
+        "author": "Stephen King",
+        "publication_year": 1977,
+        "short_description": "Psychological horror novel about a family isolated in a haunted hotel, exploring themes of madness and supernatural forces.",
+        "full_description": "\"The Shining\" tells the story of Jack Torrance, an aspiring writer and recovering alcoholic, who takes a job as the winter caretaker of the remote Overlook Hotel. Jack moves in with his family, including his psychic son Danny and wife Wendy. As the hotel becomes snowbound, supernatural forces awaken, tormenting the family. Jack's descent into madness and the hotel's malevolent influence create a chilling tale of psychological horror, exploring the dark corners of the human mind and the eerie presence of the supernatural."
+    }
+},
+{
+    "model": "book.readingsession",
+    "pk": 7,
+    "fields": {
+        "user": 2,
+        "book": 5,
+        "start_time": "2023-10-12T22:46:16.467Z",
+        "end_time": "2023-10-12T22:46:30.092Z"
+    }
+},
+{
+    "model": "book.readingsession",
+    "pk": 8,
+    "fields": {
+        "user": 2,
+        "book": 5,
+        "start_time": "2023-10-12T22:46:54.628Z",
+        "end_time": "2023-10-12T22:46:59.814Z"
+    }
+},
+{
+    "model": "book.readingsession",
+    "pk": 9,
+    "fields": {
+        "user": 2,
+        "book": 5,
+        "start_time": "2023-10-12T22:49:02.954Z",
+        "end_time": "2023-10-12T22:49:09.105Z"
+    }
+},
+{
+    "model": "book.readingsession",
+    "pk": 10,
+    "fields": {
+        "user": 2,
+        "book": 5,
+        "start_time": "2023-10-12T22:54:34.720Z",
+        "end_time": "2023-10-12T22:54:39.314Z"
+    }
+},
+{
+    "model": "book.readingsession",
+    "pk": 11,
+    "fields": {
+        "user": 2,
+        "book": 3,
+        "start_time": "2023-10-12T23:52:18.609Z",
+        "end_time": "2023-10-12T23:52:23.245Z"
+    }
+},
+{
+    "model": "book.readingsession",
+    "pk": 12,
+    "fields": {
+        "user": 2,
+        "book": 5,
+        "start_time": "2023-10-13T11:52:21.059Z",
+        "end_time": "2023-10-13T11:52:25.711Z"
+    }
+}
+]
